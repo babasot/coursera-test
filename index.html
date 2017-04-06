@@ -1,12 +1,17 @@
 <!DOCTYPE html>
-<html>
+<html ng-app="miApp">
   <head>
     <meta charset="utf-8">
     <title>Angular1 con BrowserSync</title>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.3/angular.min.js"></script>
+    <script type="text/javascript" src="JS/app.js"></script>
   </head>
   <body>
     <h1>Hola que hace!</h1>
-    <div>Un cambio</div>
+    <div ng-controller="controller1">
+    	<input type="text" ng-model="name">
+    	Mi input es: {{ name }}
+    </div>
 
   </body>
 </html>
